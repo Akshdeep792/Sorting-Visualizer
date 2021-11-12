@@ -104,9 +104,15 @@ p{
     width: 80%;
     /* background: cornflowerblue; */
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
 }
 
 .bar{
     width: 1%;
     background: yellow;
+   
 }
