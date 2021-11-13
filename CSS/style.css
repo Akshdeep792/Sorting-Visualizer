@@ -6,14 +6,17 @@ html, body {
     font-family: 'Fira Code', monospace;
     display: flex;
     flex-direction: column;
+    background: rgb(14, 12, 12);
+    font-family: 'Roboto Slab', serif;
 }
 
 footer {
     bottom: 10px !important;
-    margin-top: auto;
+    margin-top: 20px;
     text-align: center;
     position: relative;
     font-size: 20px;
+    color: #BB86FC;
 }
 
 .link {
@@ -28,19 +31,21 @@ footer {
 }
 
 .title {
-    background-color: #4f9fbe;
+color: #BB86FC;
     text-decoration: none;
     text-align: center;
-    font-size: large;
+    font-size: 1.5rem;
+    
 }
 
 .center {
     margin: 0 auto;
-    border: 2px solid rgb(211, 102, 102);
-    width: 900px;
+    border-radius: 5px;
+    width: 80%;
     height: 450px;
-    max-width: 411px;
+    /* max-width: 411px; */
     max-height: 731px;
+    background: #121212;
 }
 
 #box {
@@ -62,10 +67,11 @@ footer {
     flex: 0.5;
     width: 0.000001%;
     margin: 1px;
-    background-color: #D6D6D6;
+    background-color: #BB86FC;
     resize: horizontal;
     position: relative;
     transition: all .4s ease-in;
+    border-radius: 5px;
 }
 
 .cell.done {
@@ -76,8 +82,8 @@ footer {
 }
 
 .cell.visited {
-    border-color: #6184D8;
-    background-color: #6184D8;
+    border-color: #03DAC5;
+    background-color: #03DAC5;
     color: white;
     transition: .5s;
 }
@@ -104,7 +110,7 @@ footer {
     min-height: 60px;
     overflow: hidden;
     text-align: center;
-    background-color: rgb(98, 89, 184);
+    /* background-color: #BB86FC; */
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
@@ -115,10 +121,11 @@ footer {
 .navbar a {
     outline: none;
     cursor: pointer;
-    color: #ccd6f6;
+    color: #BB86FC;
     font-weight: bold;
     padding: 13px 13px;
     text-decoration: none;
+   
 }
 
 .navbar #menu {
@@ -126,7 +133,12 @@ footer {
     width: 150px;
     height: 25px;
     outline: none;
+    background: #202020;
+    border: none;
+    color: #BB86FC;
+    padding: 2px;
 }
+
 
 .navbar > a:hover {
     color: #64ffda;
@@ -135,6 +147,52 @@ footer {
 .navbar > .icon {
     display: none;
 }
+
+
+
+.block {
+    width: 28px;
+    background-color: #6b5b95;
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s all ease;
+    }
+    
+    .block2 {
+    width: 28px;
+    background-color: darkgray;
+    position: absolute;
+    transition: 0.2s all ease;
+    }
+    .block_id {
+    position: absolute;
+    color: black;
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+    }
+    .block_id2 {
+    position: absolute;
+    color: black;
+    margin-top: 22px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .block_id3 {
+    position: absolute;
+    color: black;
+    margin-top: 1px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    #count {
+    height: 265px;
+    width: 598px;
+    margin: auto;
+    }
+    
 
 @media screen and (max-width: 900px) {
     .navbar a, .navbar .options {
